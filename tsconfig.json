@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "none",
+    "target": "esnext",
+    "sourceMap": true,
+    "lib": ["esnext", "dom"],
+    "pretty": true,
+    "allowJs": true,
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "removeComments": true,
+    "noImplicitThis": false,
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": false,
+    "experimentalDecorators": true,
+    "newLine": "LF"
+  },
+  "include": ["./src/**/**/*", "./@types/**/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

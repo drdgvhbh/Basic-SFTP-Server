@@ -1,0 +1,42 @@
+{
+  "name": "stfp-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "src"
+    ],
+    "env": {
+      "DEBUG": "debug info error"
+    },
+    "ext": "ts",
+    "exec": "ts-node ./src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^4.0.1",
+    "dotenv": "^6.0.0",
+    "fs-jetpack": "^2.1.1",
+    "moment": "^2.22.2",
+    "node-sftp-server": "github:rtm1000/node-sftp-server#patch-2",
+    "upath": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/debug": "0.0.30",
+    "@types/dotenv": "^4.0.3",
+    "@types/node": "^10.11.2",
+    "nodemon": "^1.18.4",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "^3.1.1"
+  }
+}
